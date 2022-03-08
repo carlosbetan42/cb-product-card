@@ -7,6 +7,11 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "url": "https://github.com/carlosbetan42/cb-product-card",
+    "type": "git"
+  },
+  "homepage": "https://github.com/carlosbetan42/cb-product-card",
   "engines": {
     "node": ">=10"
   },
@@ -14,6 +19,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
+    "test:watch": "tsdx test --watch",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -52,12 +58,32 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.13",
     "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
-    "typescript": "^3.9.10"
+    "typescript": "^3.9.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@types/react-test-renderer": "^17.0.1",
+    "babel-jest": "^27.5.1",
+    "jest": "^25.5.4",
+    "react-test-renderer": "^17.0.2"
+  },
+  "keywords": [
+    "product",
+    "card",
+    "carlos",
+    "betancourt"
+  ],
+  "dependencies": {},
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
   }
 }
